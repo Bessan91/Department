@@ -1,0 +1,13 @@
+C:\Users\Bessan\Desktop\vi\dep\obj\Debug\dep.csproj.AssemblyReference.cache
+C:\Users\Bessan\Desktop\vi\dep\obj\Debug\dep.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bessan\Desktop\vi\dep\obj\Debug\dep.Form1.resources
+C:\Users\Bessan\Desktop\vi\dep\obj\Debug\dep.Properties.Resources.resources
+C:\Users\Bessan\Desktop\vi\dep\obj\Debug\dep.csproj.GenerateResource.cache
+C:\Users\Bessan\Desktop\vi\dep\obj\Debug\dep.csproj.CoreCompileInputs.cache
+C:\Users\Bessan\Desktop\vi\dep\bin\Debug\dep.exe.config
+C:\Users\Bessan\Desktop\vi\dep\bin\Debug\dep.exe
+C:\Users\Bessan\Desktop\vi\dep\bin\Debug\dep.pdb
+C:\Users\Bessan\Desktop\vi\dep\obj\Debug\dep.exe
+C:\Users\Bessan\Desktop\vi\dep\obj\Debug\dep.pdb
+C:\Users\Bessan\Desktop\vi\dep\bin\Debug\itextsharp.dll
+C:\Users\Bessan\Desktop\vi\dep\obj\Debug\dep.csproj.CopyComplete
