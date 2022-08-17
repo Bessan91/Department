@@ -69,6 +69,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="bin\Debug\dep.exe.config" />
+    <None Include="bin\Release\dep.exe.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -83,6 +85,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\dep.exe" />
+    <Content Include="bin\Debug\dep.pdb" />
+    <Content Include="bin\Debug\itextsharp.dll" />
+    <Content Include="bin\Release\dep.exe" />
+    <Content Include="bin\Release\dep.pdb" />
+    <Content Include="bin\Release\itextsharp.dll" />
     <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
