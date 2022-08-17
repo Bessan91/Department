@@ -11,3 +11,16 @@ C:\Users\Bessan\Desktop\vi\dep\obj\Debug\dep.exe
 C:\Users\Bessan\Desktop\vi\dep\obj\Debug\dep.pdb
 C:\Users\Bessan\Desktop\vi\dep\bin\Debug\itextsharp.dll
 C:\Users\Bessan\Desktop\vi\dep\obj\Debug\dep.csproj.CopyComplete
+C:\Users\Bessan\source\repos\NewRepo4\bin\Debug\dep.exe.config
+C:\Users\Bessan\source\repos\NewRepo4\bin\Debug\dep.exe
+C:\Users\Bessan\source\repos\NewRepo4\bin\Debug\dep.pdb
+C:\Users\Bessan\source\repos\NewRepo4\bin\Debug\itextsharp.dll
+C:\Users\Bessan\source\repos\NewRepo4\obj\Debug\dep.csproj.AssemblyReference.cache
+C:\Users\Bessan\source\repos\NewRepo4\obj\Debug\dep.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bessan\source\repos\NewRepo4\obj\Debug\dep.Form1.resources
+C:\Users\Bessan\source\repos\NewRepo4\obj\Debug\dep.Properties.Resources.resources
+C:\Users\Bessan\source\repos\NewRepo4\obj\Debug\dep.csproj.GenerateResource.cache
+C:\Users\Bessan\source\repos\NewRepo4\obj\Debug\dep.csproj.CoreCompileInputs.cache
+C:\Users\Bessan\source\repos\NewRepo4\obj\Debug\dep.csproj.CopyComplete
+C:\Users\Bessan\source\repos\NewRepo4\obj\Debug\dep.exe
+C:\Users\Bessan\source\repos\NewRepo4\obj\Debug\dep.pdb

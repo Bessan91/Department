@@ -14,7 +14,7 @@ namespace dep
 {
     public partial class Form1 : Form
     {
-        void ExportToPdf(DataTable tabel ,string path,string header  )
+        void ExportToPdf(DataTable tabel ,string path,string header)
         {
             System.IO.FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None);
             Document doc = new Document();
@@ -27,24 +27,28 @@ namespace dep
             var tahomaFontFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts),"Tahoma.ttf");
             var tahomaBaseFont = BaseFont.CreateFont(tahomaFontFile, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
             var tahomaFont = new Font(tahomaBaseFont, 12);
-            var table = new PdfPTable(2)
+            var table = new PdfPTable(1)
             {
                 RunDirection = PdfWriter.RUN_DIRECTION_RTL
             };
-            var phrase = new Phrase("تم إبرام هذا العقد في هذا اليوم [●] م الموافق [●] من قبل وبين .", tahomaFont);
-            var cell = new PdfPCell(phrase)
-            {
-                RunDirection = PdfWriter.RUN_DIRECTION_RTL,
-               // Border = 0,
-            };
+           
             string[] arr = new string[name_of_dep.Items.Count];
             for (int i = 0; i < arr.Length; i++)
             {
+                string[] FirstDept = name_of_dep.Items[i].ToString().Split('_');
+              
+                var phrase1 = new Phrase(Environment.NewLine+"  المرسل اليه   : " + FirstDept[0] +Environment.NewLine+Environment.NewLine + "  الرمز البريدي :" + FirstDept[1] +Environment.NewLine+Environment.NewLine+"  التاريخ  :" +
+                   DateTime.Now.ToString("yyyy-MM-dd")+Environment.NewLine+Environment.NewLine+"  المرسل:ديوان وزارة الداخلية /المقر العام /رام الله/الماصيون" +Environment.NewLine
+                    +Environment.NewLine+" الرمز البريدي    : P 6028718 " +Environment.NewLine + Environment.NewLine , tahomaFont);
 
+                var cell1 = new PdfPCell(phrase1);
                
+
+                table.AddCell(cell1);
+               // lol
             } 
 
-            table.AddCell(cell);
+           
             
 
 
@@ -53,7 +57,7 @@ namespace dep
             writer.Close();
             fs.Close();
             
-        //
+       
        
 
 
@@ -73,8 +77,14 @@ namespace dep
                 int first = line.IndexOf(',');
                 string name = line.Substring(0, first);
                 int Last = line.LastIndexOf(',');
-                string modria = line.Substring(Last + 1);
-                comboBoxDept.Items.Add(name + "_" + modria);
+                string id = line.Substring(Last + 1);
+                //comboBoxDept.ValueMember =id;
+                //comboBoxDept.DisplayMember = name;
+                //comboBoxDept.Items.Add(name);
+
+
+                comboBoxDept.Items.Add(name + "_" + id);
+                //+"_" + modria
                 line = reader.ReadLine();
             }
         }
@@ -134,6 +144,16 @@ namespace dep
         private void comboBoxDept_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void clear_all_Click(object sender, EventArgs e)
+        {
+            name_of_dep.Items.Clear();
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
