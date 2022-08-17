@@ -69,7 +69,7 @@ namespace dep
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            StreamReader reader = new StreamReader("C:/Users/Bessan/Desktop/TextFile1.txt");
+            StreamReader reader = new StreamReader(@"C:/PrintDewan/TextFile1.txt");
             StringBuilder builder = new StringBuilder();
             string line = reader.ReadLine();
             while (line != null)
@@ -123,9 +123,9 @@ namespace dep
 
 
             DataTable dt = new DataTable();
-            ExportToPdf(dt, @"C:/Users/Bessan/Desktop/depe.pdf", "depe");
+            ExportToPdf(dt, @"C:/PrintDewan/depe.pdf", "depe");
 
-            System.Diagnostics.Process.Start(@"C:/Users/Bessan/Desktop/depe.pdf");
+            System.Diagnostics.Process.Start(@"C:/PrintDewan/depe.pdf");
             this.WindowState=System.Windows.Forms.FormWindowState.Maximized;    
 
 
