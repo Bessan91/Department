@@ -19,5 +19,5 @@ Second , create a file in this folder and drop this information in it :
 مديرية داخلية الخليل,P7100069                    
 مكتب عتيل/الشعراوية,P3101237
 
-and named it "TextFile1" .
+and named it "TextFile1" or you can take it from file attached inside the project called "TextFile1".
 The pdf file will be saved in the same folder.
