@@ -69,6 +69,8 @@ namespace dep
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+
             StreamReader reader = new StreamReader(@"C:/PrintDewan/TextFile1.txt");
             StringBuilder builder = new StringBuilder();
             string line = reader.ReadLine();
@@ -126,7 +128,7 @@ namespace dep
             ExportToPdf(dt, @"C:/PrintDewan/depe.pdf", "depe");
 
             System.Diagnostics.Process.Start(@"C:/PrintDewan/depe.pdf");
-            this.WindowState=System.Windows.Forms.FormWindowState.Maximized;    
+            //this.WindowState=System.Windows.Forms.FormWindowState.Maximized;    
 
 
           
@@ -154,6 +156,21 @@ namespace dep
         private void exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void header_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

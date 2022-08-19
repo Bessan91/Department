@@ -68,6 +68,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="bin\Debug\dep.exe.config" />
     <None Include="bin\Release\dep.exe.config" />
@@ -91,6 +92,16 @@
     <Content Include="bin\Release\dep.exe" />
     <Content Include="bin\Release\dep.pdb" />
     <Content Include="bin\Release\itextsharp.dll" />
+    <None Include="Resources\DvviuXSWwAAoRXD.png_large" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\download-icon-print+24px-131985193277910846_24.ico" />
+    <None Include="Resources\download-icon-clear+all+24px-131985189927880479_24.ico" />
+    <None Include="Resources\download-icon-delete+exit+remove+icon-1320183290543191930_24.ico" />
+    <None Include="Resources\download-icon-add+24px-131985189453306350_24.ico" />
+    <None Include="Resources\download-icon-add+circle+24px-131985189531127879_24.ico" />
+    <None Include="Resources\Doily.png" />
+    <None Include="Resources\وزارة الداخلية.jfif" />
     <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
