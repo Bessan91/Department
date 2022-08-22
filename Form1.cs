@@ -29,7 +29,7 @@ namespace dep
 
             var tahomaFontFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts),"Tahoma.ttf");
             var tahomaBaseFont = BaseFont.CreateFont(tahomaFontFile, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
-            var tahomaFont = new Font(tahomaBaseFont, 18);
+            var tahomaFont = new Font(tahomaBaseFont, 16);
             var table = new PdfPTable(1)
             {
                 RunDirection = PdfWriter.RUN_DIRECTION_RTL
