@@ -18,33 +18,46 @@ namespace dep
         {
             System.IO.FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None);
             Document doc = new Document();
+            doc.SetMargins(0,0,0,0);
+           
             doc.SetPageSize(iTextSharp.text.PageSize.A4);
             PdfWriter writer= PdfWriter.GetInstance(doc,fs);
             doc.Open();
 
-           
+          
+
 
             var tahomaFontFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts),"Tahoma.ttf");
             var tahomaBaseFont = BaseFont.CreateFont(tahomaFontFile, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
-            var tahomaFont = new Font(tahomaBaseFont, 12);
+            var tahomaFont = new Font(tahomaBaseFont, 18);
             var table = new PdfPTable(1)
             {
                 RunDirection = PdfWriter.RUN_DIRECTION_RTL
-            };
+               
+         
+               
+        };
+
            
             string[] arr = new string[name_of_dep.Items.Count];
             for (int i = 0; i < arr.Length; i++)
             {
                 string[] FirstDept = name_of_dep.Items[i].ToString().Split('_');
               
-                var phrase1 = new Phrase(Environment.NewLine+"  المرسل اليه   : " + FirstDept[0] +Environment.NewLine+Environment.NewLine + "  الرمز البريدي :" + FirstDept[1] +Environment.NewLine+Environment.NewLine+"  التاريخ  :" +
-                   DateTime.Now.ToString("yyyy-MM-dd")+Environment.NewLine+Environment.NewLine+"  المرسل:ديوان وزارة الداخلية /المقر العام /رام الله/الماصيون" +Environment.NewLine
-                    +Environment.NewLine+" الرمز البريدي    : P 6028718 " +Environment.NewLine + Environment.NewLine , tahomaFont);
+                var phrase1 = new Phrase(Environment.NewLine+Environment.NewLine+"  المرسل اليه   : " + FirstDept[0] +Environment.NewLine+Environment.NewLine + "  الرمز البريدي :" + FirstDept[1] +Environment.NewLine+Environment.NewLine+"  التاريخ  :" +
+                   DateTime.Now.ToString("yyyy-MM-dd")+Environment.NewLine+Environment.NewLine+ Environment.NewLine+ Environment.NewLine+"  المرسل:ديوان وزارة الداخلية /المقر العام /رام الله/الماصيون" +Environment.NewLine
+                    +Environment.NewLine+" الرمز البريدي    : P 6028718 " +Environment.NewLine + Environment.NewLine+ Environment.NewLine, tahomaFont);
 
-                var cell1 = new PdfPCell(phrase1);
-               
+                var cell1 = new PdfPCell(phrase1) {
+
+                    Border = 0,
+                    BorderWidthBottom = 1
+                };
+                
+
 
                 table.AddCell(cell1);
+                
                // lol
             } 
 
