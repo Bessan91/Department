@@ -19,8 +19,8 @@ namespace dep
             System.IO.FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None);
             Document doc = new Document();
             doc.SetMargins(0,0,0,0);
-           
-            doc.SetPageSize(iTextSharp.text.PageSize.A4);
+           //size A6
+            doc.SetPageSize(iTextSharp.text.PageSize.A6.Rotate());
             PdfWriter writer= PdfWriter.GetInstance(doc,fs);
             doc.Open();
 
